@@ -1,4 +1,44 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Photo:</strong>
+  <%= @listing.photo %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @listing.address %>
+</p>
+
+<p>
+  <strong>Property type:</strong>
+  <%= @listing.property_type %>
+</p>
+
+<p>
+  <strong>Number of bedrooms:</strong>
+  <%= @listing.number_of_bedrooms %>
+</p>
+
+<p>
+  <strong>Number of bathrooms:</strong>
+  <%= @listing.number_of_bathrooms %>
+</p>
+
+<p>
+  <strong>Max price per week:</strong>
+  <%= @listing.max_price_per_week %>
+</p>
+
+<p>
+  <strong>Available date:</strong>
+  <%= @listing.available_date %>
+</p>
+
+<p>
+  <strong>Roles:</strong>
+  <%= @listing.roles %>
+</p>
+
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <%= link_to 'Back', listings_path %>

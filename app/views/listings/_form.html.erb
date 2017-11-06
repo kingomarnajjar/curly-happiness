@@ -10,6 +10,50 @@
       </ul>
     </div>
   <% end %>
+  <div class="field">
+  <%= form.label :avatar %>
+
+</div>
+
+  <div class="field">
+    <%= form.label :photo %>
+    <%= form.file_field :photo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :listing_Address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :property_type %>
+    <%= form.text_field :property_type, id: :listing_property_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_of_bedrooms %>
+    <%= form.number_field :number_of_bedrooms, id: :listing_number_of_bedrooms %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_of_bathrooms %>
+    <%= form.number_field :number_of_bathrooms, id: :listing_number_of_bathrooms %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max_price_per_week %>
+    <%= form.number_field :max_price_per_week, id: :listing_max_price_per_week %>
+  </div>
+
+  <div class="field">
+    <%= form.label :available_date %>
+    <%= form.number_field :available_date, id: :listing_available_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :roles %>
+    <%= form.number_field :roles, id: :listing_Roles %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>

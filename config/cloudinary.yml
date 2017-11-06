@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: curlyhappiness
+  api_key: '363646175522825'
+  api_secret: fGga3bKgIksDm7_vn9uYVFhj2T0
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: curlyhappiness
+  api_key: '363646175522825'
+  api_secret: fGga3bKgIksDm7_vn9uYVFhj2T0
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: curlyhappiness
+  api_key: '363646175522825'
+  api_secret: fGga3bKgIksDm7_vn9uYVFhj2T0
+  enhance_image_tag: true
+  static_image_support: false

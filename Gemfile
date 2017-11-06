@@ -5,6 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+#File uploads rails gem
+gem 'carrierwave', '~> 1.0'
+#Cloud storage for file uploads, created an account on cloudinary
+gem 'cloudinary'
+
 #For different Roles management
 gem 'rolify'
 #Authorization gem cancancan for controlling rolify
