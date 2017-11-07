@@ -6,7 +6,11 @@
   <thead>
     <tr>
       <th>Photo</th>
-      <th>Photo2</th>
+      <th>Photo 2</th>
+      <th>Photo 3</th>
+      <th>Photo 4</th>
+      <th>Photo 5</th>
+      <th>Photo 6</th>
       <th>Address</th>
       <th>Property type</th>
       <th>Number of bedrooms</th>
@@ -21,8 +25,12 @@
   <tbody>
     <% @listings.each do |listing| %>
       <tr>
-        <td><%= cl_image_tag(listing.photo_url, :width => 100, :height => 150, :crop => :fill) %></td>
-        <td><%= cl_image_tag(listing.photo2_url, :width => 100, :height => 150, :crop => :fill) %></td>
+        <td><%= cl_image_tag(listing.photo_url, :class => "uploaded_photo") %></td>
+        <td><%= cl_image_tag(listing.photo2_url, :class => "uploaded_photo") %></td>
+        <td><%= cl_image_tag(listing.photo3_url, :class => "uploaded_photo") %></td>
+        <td><%= cl_image_tag(listing.photo4_url, :class => "uploaded_photo") %></td>
+        <td><%= cl_image_tag(listing.photo5_url, :class => "uploaded_photo") %></td>
+        <td><%= cl_image_tag(listing.photo6_url, :class => "uploaded_photo") %></td>
         <td><%= listing.address %></td>
         <td><%= listing.property_type %></td>
         <td><%= listing.number_of_bedrooms %></td>

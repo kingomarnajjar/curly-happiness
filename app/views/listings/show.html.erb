@@ -2,12 +2,27 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= cl_image_tag(@listing.photo_url,:width => 100, :height => 150, :crop => :fill) %>
+  <%= cl_image_tag(@listing.photo_url, :class => "uploaded_photo")  %>
 </p>
 
 <p>
-<strong>Photo2:</strong>
-<%=  cl_image_tag(@listing.photo2_url, :width => 100, :height => 150, :crop => :fill)%>
+<strong>Photo3:</strong>
+<%=  cl_image_tag(@listing.photo3_url, :class => "uploaded_photo") %>
+</p>
+
+<p>
+<strong>Photo4:</strong>
+<%=  cl_image_tag(@listing.photo4_url, :class => "uploaded_photo") %>
+</p>
+
+<p>
+<strong>Photo5:</strong>
+<%=  cl_image_tag(@listing.photo5_url, :class => "uploaded_photo") %>
+</p>
+
+<p>
+<strong>Photo6:</strong>
+<%=  cl_image_tag(@listing.photo6_url, :class => "uploaded_photo") %>
 </p>
 
 <p>
