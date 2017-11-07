@@ -2,6 +2,7 @@ class CreateListings < ActiveRecord::Migration[5.1]
   def change
     create_table :listings do |t|
       t.text :photo
+      t.text :photo2
       t.string :address
       t.string :property_type
       t.integer :number_of_bedrooms

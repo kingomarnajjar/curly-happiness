@@ -6,14 +6,15 @@ git_source(:github) do |repo_name|
 end
 
 #File uploads rails gem
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.0', github: 'carrierwaveuploader/carrierwave'
 #Cloud storage for file uploads, created an account on cloudinary
 gem 'cloudinary'
 
+gem 'petergate'
 #For different Roles management
-gem 'rolify'
+# gem 'rolify'
 #Authorization gem cancancan for controlling rolify
-gem 'cancancan', '~> 2.0'
+# gem 'cancancan', '~> 2.0'
 #Devise used for authentication
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

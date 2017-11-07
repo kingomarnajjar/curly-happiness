@@ -2,7 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-listing.photo {
-  width: 10px;
-  length: 10px;
+.uploaded_photo {
+  display: block;
+  margin: auto;
+  width: 50%;
 }

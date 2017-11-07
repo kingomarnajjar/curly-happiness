@@ -1,4 +1,5 @@
 class Listing < ApplicationRecord
+  attr_accessor :photo
   mount_uploader :photo, PhotosForListingsUploader
-  # params.require(:Listing).permit({Photo: []})
+  mount_uploader :photo2, PhotosForListingsUploader
 end

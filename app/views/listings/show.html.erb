@@ -2,7 +2,12 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= @listing.photo %>
+  <%= cl_image_tag(@listing.photo_url,:width => 100, :height => 150, :crop => :fill) %>
+</p>
+
+<p>
+<strong>Photo2:</strong>
+<%=  cl_image_tag(@listing.photo2_url, :width => 100, :height => 150, :crop => :fill)%>
 </p>
 
 <p>
