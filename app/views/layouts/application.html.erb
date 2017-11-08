@@ -3,15 +3,19 @@
   <head>
     <title>Rently</title>
     <%= csrf_meta_tags %>
-
+    <!-- Full version, For production do compiled and minified CSS by adding .min before .css -->
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css"> -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
     <!--For devise to flash notices and alerts  -->
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+
     <!-- # views/devise/menu/_login_items.html.erb -->
     <% if user_signed_in? %>
       <li>
@@ -23,7 +27,6 @@
       </li>
     <% end %>
 
-
     <!-- # views/devise/menu/_registration_items.html.erb -->
     <% if user_signed_in? %>
       <li>
@@ -34,6 +37,8 @@
       <%= link_to('Register', new_user_registration_path)  %>
       </li>
     <% end %>
+
+    <%= link_to "Mailbox", conversations_path %><br>
 
     <%= yield %>
   </body>

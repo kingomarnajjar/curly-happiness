@@ -1,5 +1,9 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
+  #Configure for petergates roles "access all"
+  access all: [:show, :index, :new, :edit, :create, :update ], user: {except: [:destroy, ]}, message: "You shall not pass", admin: :all
+
+
   # params.require(:listing).permit({photo: []})
   # GET /listings
   # GET /listings.json

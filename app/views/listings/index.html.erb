@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
 <h1>Listings</h1>
 
@@ -22,9 +22,23 @@
     </tr>
   </thead>
 
-  <tbody>
+  <body>
     <% @listings.each do |listing| %>
-      <tr>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <%= link_to cl_image_tag(listing.photo_url, :class => "uploaded_photo"), listing %>
+            <span class="card-title">Card Title</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">fav</i></a>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- <tr>
         <td><%= cl_image_tag(listing.photo_url, :class => "uploaded_photo") %></td>
         <td><%= cl_image_tag(listing.photo2_url, :class => "uploaded_photo") %></td>
         <td><%= cl_image_tag(listing.photo3_url, :class => "uploaded_photo") %></td>
@@ -41,9 +55,12 @@
         <td><%= link_to 'Show', listing %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
         <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      </tr> -->
     <% end %>
-  </tbody>
+
+
+
+  </body>
 </table>
 
 <br>

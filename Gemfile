@@ -4,12 +4,15 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+# for styling
+# gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
 #File uploads rails gem
-gem 'carrierwave', '~> 1.0', github: 'carrierwaveuploader/carrierwave'
+gem 'carrierwave'
 #Cloud storage for file uploads, created an account on cloudinary
 gem 'cloudinary'
 
+#For roles, admin and user
 gem 'petergate'
 #For different Roles management
 # gem 'rolify'
