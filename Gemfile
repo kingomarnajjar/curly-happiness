@@ -7,6 +7,11 @@ end
 # for styling
 # gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
+#Materialize for styling
+# gem 'materialize-sass'
+
+#Using sendgrid as mailer
+gem 'sendgrid-ruby'
 #File uploads rails gem
 gem 'carrierwave'
 #Cloud storage for file uploads, created an account on cloudinary

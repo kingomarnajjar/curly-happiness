@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 20171108052557) do
 
   create_table "listings", force: :cascade do |t|
     t.text "photo"
-    t.text "photo2"
     t.string "address"
     t.string "property_type"
     t.integer "number_of_bedrooms"

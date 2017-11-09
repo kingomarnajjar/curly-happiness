@@ -6,8 +6,20 @@ class User < ApplicationRecord
   ## The multiple option can be set to true if you need users to have multiple roles.       ##
   petergate(roles: [:admin, ], multiple: false)                                      ##
   ############################################################################################
-
+  #For internal messaging between sender and receiver
   has_many :conversations, :foreign_key => :sender_id
+
+  def create
+  # Create the user from params
+  @user = User.new(params[:user])
+    if @user.save
+      # Deliver the signup email
+      UserNotifier.send_signup_email(@user).deliver
+      redirect_to(@user, :notice => 'User created')
+    else
+      render :action => 'new'
+    end
+  end
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
