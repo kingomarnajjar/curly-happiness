@@ -24,13 +24,17 @@ ActiveRecord::Schema.define(version: 20171108052557) do
 
   create_table "listings", force: :cascade do |t|
     t.text "photo"
+    t.text "photo2"
+    t.text "photo3"
+    t.text "photo4"
+    t.text "photo5"
     t.string "address"
     t.string "property_type"
     t.integer "number_of_bedrooms"
     t.integer "number_of_bathrooms"
-    t.integer "max_price_per_week"
+    t.integer "rent_price_per_week"
     t.integer "available_date"
-    t.integer "roles"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
