@@ -1,5 +1,5 @@
 
-User.create!(email: "najomar68@gmail.com",password: "123456")
+User.create!(email: "najomar68@gmail.com",password: "123456", user_id: 1, role: "admin")
 User.create!(email: "kevin@gmail.com", password: "123456")
 User.create!(email: "takuya@gmail.com", password: "123456")
 
