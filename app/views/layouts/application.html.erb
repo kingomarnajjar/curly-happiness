@@ -28,25 +28,28 @@
         <div class="background">
           <img src="images/me_with_mangoes1.jpg">
         </div>
-        <img src="app/assets/images/me_with_mangoes1.jpg"><br>
+        <img src="app/assets/me_with_mangoes1.jpg" class="responsive-img"><br>
       </div></li>
       <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
       <li><div class="divider"></div></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-      <li><!-- # views/devise/menu/_login_items.html.erb -->
-      <% if user_signed_in? %>
-        <!-- <%= link_to('Logout', destroy_user_session_path, method: :delete) %> -->
-      <% else %>
-        <%= link_to('Login', new_user_session_path)  %>
-      <% end %></li>
+      <!-- # views/devise/menu/_login_items.html.erb -->
+      <li>
+        <% if user_signed_in? %>
+          <!-- <%= link_to('Logout', destroy_user_session_path, method: :delete) %> -->
+        <% else %>
+          <%= link_to('Login', new_user_session_path, :class => "waves-effect")  %>
+        <% end %></a>
+      </li>
+
+
       <li><!-- # views/devise/menu/_registration_items.html.erb -->
       <% if user_signed_in? %>
-        <%= link_to('Edit registration', edit_user_registration_path) %>
+        <%= link_to('Edit registration', edit_user_registration_path, :class => "waves-effect") %>
       <% else %>
-        <%= link_to('Register', new_user_registration_path)  %>
+        <%= link_to('Register', new_user_registration_path, :class => "waves-effect")  %>
         </li>
       <% end %></li>
-      <li><%= link_to "Mailbox", conversations_path %><br></li>
+      <li><%= link_to("Mailbox", conversations_path, :class => "waves-effect") %><br></li>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
   </header>

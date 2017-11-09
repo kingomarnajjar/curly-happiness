@@ -19,9 +19,11 @@
         <a class="carousel-item" href="#four!"><img src="<%= listing.photo4_url %>"></a>
         <a class="carousel-item" href="#five!"><img src="<%= listing.photo5_url %>"></a>
       </div>
-      <!-- referencing seed file -->
+      <!-- referencing seed file and database -->
+      <%= listing.rent_price_per_week %>
       <%= listing.number_of_bedrooms %>
       <%= listing.address %>
+
 
 
       <script type="text/javascript">
