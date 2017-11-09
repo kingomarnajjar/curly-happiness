@@ -1,5 +1,5 @@
 
-User.create!(email: "najomar68@gmail.com",password: "123456", user_id: 1, role: "admin")
+User.create!(email: "najomar68@gmail.com",password: "123456", roles: "admin")
 User.create!(email: "kevin@gmail.com", password: "123456")
 User.create!(email: "takuya@gmail.com", password: "123456")
 
@@ -11,6 +11,7 @@ Listing.create!(
   photo3: File.open(Rails.root+"app/assets/images/listing/photo3.jpg"),
   photo4: File.open(Rails.root+"app/assets/images/listing/photo4.jpg"),
   photo5: File.open(Rails.root+"app/assets/images/listing/photo5.jpg"),
+  address: "7 kelly st, Ultimo",
   number_of_bedrooms: 2 ,
   rent_price_per_week: 500 ,
   available_date: 20160809,

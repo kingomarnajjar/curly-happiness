@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <!-- materialize carousel pulling from cloudinary -->
     <% @listings.each do |listing| %>
       <div class="carousel carousel-slider">
         <a class="carousel-item" href="#one!"><img src="<%= listing.photo_url %>"></a>
@@ -18,7 +19,9 @@
         <a class="carousel-item" href="#four!"><img src="<%= listing.photo4_url %>"></a>
         <a class="carousel-item" href="#five!"><img src="<%= listing.photo5_url %>"></a>
       </div>
-
+      <!-- referencing seed file -->
+      <%= listing.number_of_bedrooms %>
+      <%= listing.address %>
 
 
       <script type="text/javascript">
